@@ -1,0 +1,96 @@
+body{
+    background-image: url("../memory_game_img/background0.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin : 0;
+    text-align :center;
+    font-family : cursive;
+}
+   
+h1{
+    color:beige;
+    font-size : 40px;
+    font-weight : bold;
+}
+#board{
+    height: 400px;
+    width : 400px;
+    margin : 120px auto;
+    background-color :#795548;
+    border : 10px solid #5b3e33;
+    display : flex;
+    flex-wrap : wrap;
+
+}
+.card{
+   height : 90px;
+   width : 90px;
+   /* margin : 5px; */
+   /* background-color:rgb(148, 70, 70); */
+   border : 5px solid rgb(59 35 26);
+}
+.card:hover{
+    border:5px solid rgba(0, 34, 255, 0.414);
+}
+/* icons */
+.icon{
+    display : inline-flex;
+    margin : 3px;
+    position : absolute;
+    top : 77px;
+}
+#home-icon{
+    left : 0px;
+    cursor: pointer;
+}
+#restart-icon{
+    left : 50px;
+    cursor : pointer;
+}
+#music-icon-on{
+    left : 100px;
+    cursor : pointer;
+}
+#music-icon-off{
+    left : 150px;
+    cursor : pointer;
+}
+/* pop-up */
+    .icon::before {
+        border : 2px solid #81ff00d4;
+        background-color: black;
+        width: 300px;
+        padding: 4px;
+        margin: 20px;
+        display : none;
+        position: absolute;
+        top:50px;
+        color: yellow;
+      }
+      #home-icon::before{
+        content: "Click if you want to exit...";
+      }
+      #restart-icon::before {
+        content: "Click if you want to restart the game..";
+      }
+      #music-icon-on::before {
+        content: "Click if you want to play the music..";
+      }
+      #music-icon-off::before {
+        content: "Click if you want to stop the music..";
+      }
+      #home-icon:hover::before {
+        display: block;
+      }
+      #restart-icon:hover::before {
+        display: block;
+      }
+      #music-icon-on:hover::before {
+        display: block;
+      }
+       #music-icon-off:hover::before {
+        display: block;
+      }
+      
+
+    

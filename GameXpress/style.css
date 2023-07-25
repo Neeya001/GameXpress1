@@ -1,0 +1,175 @@
+/* CSS Reset */
+*{
+    padding:0px;
+    margin:0px;
+    font-family: cursive;
+}
+/* Header */
+#navbar{
+    display:flex;
+    align-items:center;
+    position: relative;
+    top:0px;
+}
+#navbar ul{
+    display:flex;
+}
+#navbar::before{
+    content:"";
+    background-color:black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+}
+#navbar ul li{
+    list-style:none;
+    font-size:1.7rem;
+}
+#navbar ul li a{
+   display:block;
+   padding:20px 29px;
+   border-radius:20px;
+   color:white;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:#00aeff;
+    text-decoration: underline;
+}
+
+#login a{
+    position: absolute;
+    right:40px;
+}
+
+/* Home Section */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:5px 200px;
+    height: 785px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background: url('images/background.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.99; 
+} 
+#home h1{
+    color: white;
+    text-align: center;
+    font-size:100px;
+    font-weight:bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.gameColor,.heading_second,.heading_first {
+    font-size:70px;
+    font-weight:bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(90deg, #ff0000, #ffff00,#ff00f3, #0033ff, #ff00c4,#ff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+   
+    animation : animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position:0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+
+/* Games */
+.heading_second{
+    font-size : 30px;
+}
+.box p{
+    font-size : 1.5rem;
+    padding : 10px;
+}
+   .about_games{
+    width : 100%;
+    padding-bottom: 50px;
+   }
+    .game_img{
+        height: 120px;
+        width : 120px;
+    }
+   #games{
+    width:100%;
+    margin : auto;
+    flex-wrap: wrap;
+    display : flex;
+    justify-content: space-around;
+    
+   }
+   .box{
+    flex-basis:46.33%;
+    margin : 20px 0px;
+    box-shadow : 0px 0px 10px 3px rgb(95, 95, 227);
+    background-color: #515f75c4;
+    color:white;
+    text-align : center;
+    padding : 20px 0px;
+   }
+   
+   .about_games{
+       background-color: #00002c;
+    }
+    
+    /* botton */
+.btn{
+    border: 2px solid blue;
+    background-color: #ffffffa3;
+    padding:6px 20px;
+    margin:20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    box-shadow : 0px 0px 10px 3px rgb(95, 95, 227);
+}
+.btn1{
+    border:2px solid #2a7bba;
+    background-color: black;
+    padding : 9px  25px;
+    border-radius:20px 0px;
+    margin :20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.btn a{
+    margin : 10px 0px;
+    color : blue;
+    text-decoration : none;
+    font-size : 30px;
+}
+.btn1 a{
+    margin : 10px 0px;
+    color:#2a7bba;
+    text-decoration: none;
+    
+}
+.btn:hover{
+    color:black;
+    background-color: #3e455fd4;
+    width:40%;
+}
+.btn1:hover{
+    color:blue;
+    background-color: rgb(29, 28, 28);
+    width : 40%;
+    box-shadow : 0px 0px 10px 3px rgb(95, 95, 227);
+}
+.center{
+    text-align: center;
+}
+/* ---END---- */

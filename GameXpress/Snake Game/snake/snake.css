@@ -1,0 +1,103 @@
+body{
+    font-family: curvise;
+    text-align: center;
+    background-image: url(../snake_img/stitch\ wallpaper.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+h1{
+    font-size : 40px;
+    font-weight : bold;
+}
+.icon{
+    display : inline;
+    margin : 3px;
+    position : absolute;
+    top : 77px;
+}
+#home-icon{
+    left : 0px; 
+    cursor: pointer; 
+}
+#restart-icon{
+    left : 50px; 
+    cursor : pointer; 
+} 
+#music-icon-on{
+    left : 100px;
+    cursor : pointer; 
+}
+#music-icon-off{
+    left : 150px;
+   cursor : pointer;
+}
+/* Pop Up */
+   .icon::before {
+        border : 2px solid #81ff00d4;
+        background-color: black;
+        width: 300px;
+    padding: 4px;
+    margin: 20px;
+        display : none;
+        position: absolute;
+        top:50px;
+        color: yellow;
+      }
+      .icon:hover::before {
+        display: block;
+      }
+      #home-icon::before{
+        content: "Click if you want to exit...";
+      }
+      #restart-icon::before {
+        content: "Click if you want to restart the game..";
+      }
+      #music-icon-on::before {
+        content: "Click if you want to play the music..";
+      }
+      #music-icon-off::before {
+        content: "Click if you want to stop the music..";
+      }
+    
+@media only screen and (min-width : 100px) and (max-width:900px){
+    body{
+        background-image: url(../snake_img/snake_responsive.jpg);
+    background-attachment: fixed;
+    text-align: center;
+    
+    }
+    h1{
+   font-size:27px;
+    }
+hr{
+    width : 0px;
+}
+#board{
+    margin : 90px auto;
+    width : 400px;
+    height:400px;
+}
+.container{
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.icon{
+ margin : 0px;
+position : static;
+
+}
+.icon:hover::before{
+display:none;
+}
+}
+@media only screen and (min-width : 375px) and (max-width:700px){
+    #board{
+        margin : 90px auto;
+        width : 350px;
+        height:400px;
+    }
+}

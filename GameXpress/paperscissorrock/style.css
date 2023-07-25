@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #e3e2db;
+   
+    }
+    /* To center everything in game */
+    .game{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    }
+    
+    /* Title of the game */
+    .title{
+        text-shadow: 0 0 5px #0a0805, 0 0 15px #0a0703, 0 0 20px #e3e2db, 0 0 40px #4b4b49, 0 0 60px #787171, 0 0 10px #0c0b08, 0 0 98px #554c4c;
+    color: #f3f3ef;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+    position: absolute;
+    top: 0;
+    font-size: 4rem;
+    z-index: 2;
+    animation: 3s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+    }
+    
+    
+    /* Score Board */
+    .score{
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 120px;
+    z-index: 1;
+    float: left;
+  width: 30%;
+  padding: 10px;
+  border:dotted;
+    color: rgb(247, 244, 242);
+    }
+    
+    
+    /* Score  */
+    .p-count,.c-count{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    }
+    
+    /* displaying three buttons in one line */
+    .options{
+    display:flex;
+    width: 50vw;
+    justify-content:space-between;
+    margin-top: 2rem;
+    }
+    
+    /* Styling on all three buttons */
+    .rock, .paper, .scissor{
+    padding: 0.8rem;
+    width: 120px;
+    border-radius: 10px;
+    background: green;
+    border-color: rgb(242, 239, 239);
+    cursor: pointer;
+    font-size: 25px;
+    }
+    
+    .move{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e3e2db;
+    }
+    
+    /* Reload button style */
+    .reload {
+    display: none;
+    margin-top: 2rem ;
+    padding: 1rem;
+    background: rgb(8, 195, 8);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    
+    .result{
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight:bold ;
+    color: rgb(232, 240, 232);
+    }
+    
+    /* Responsive Design */
+    @media screen and (max-width: 612px)
+    {  
+    .title{
+        text-align: center;
+    }
+    .score{
+        position: absolute;
+        top: 200px;
+        width: 100vw;
+    }
+    .options{
+        width: 100vw;
+    }
+
+    }
+    @media only screen and (min-width:100px) and(max-width:877px){
+
+
+    }

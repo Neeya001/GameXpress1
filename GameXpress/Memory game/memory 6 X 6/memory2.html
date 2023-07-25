@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="memory2.css">
+    <script src="memory2.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <i id="home-icon" class="icon"><a href="../index.html"><img src="../memory_game_img/home_icon.png" ></a></i>
+    <i id="restart-icon" class="icon"><a href="memory2.html"><img src="../memory_game_img/restart_icon.png"></a></i>
+    <audio id="myAudio" src="../memory_game_audio/background_music.mp3" preload="auto"></audio>
+    <i id="music-icon-on" class="icon"  onclick="playAudio()"><img src="../memory_game_img/musicOn.png"></i>
+    <i id="music-icon-off" class="icon"  onclick="stopAudio()"><img src="../memory_game_img/musicOff.png"></i>
+    <h1>MEMORY GAME</h1>
+    <h2>LifeLine: <span id="errors"></span></h2>
+    <hr>
+    <div id="board">
+        
+    </div>
+    <script>
+        var audio = document.getElementById("myAudio");
+   
+   function playAudio() {
+     audio.play();
+   }
+   
+   function pauseAudio() {
+     audio.pause();
+   }
+   
+   function stopAudio() {
+     audio.pause();
+     audio.currentTime = 0;
+   }
+   
+      </script>
+</body>
+</html>

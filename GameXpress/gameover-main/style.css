@@ -1,0 +1,113 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+
+
+}
+body{
+    background-image:url("gameover.jpg") ;
+    background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   display : flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items:center;
+   justify-content: center;
+}
+header{
+    padding-top: 5%;
+    font-size: 100px;
+  color: #0d0909;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #67f496, 0 0 20px #dbe1d9, 0 0 30px #24d18e, 0 0 40px #09ec3e, 0 0 50px hsl(104, 84%, 29%), 0 0 60px #16dc51, 0 0 70px #03860c;
+  }
+  to {
+    text-shadow: 0 0 20px #ffffff, 0 0 30px #5aef70, 0 0 40px #09b40f, 0 0 50px #02450c, 0 0 60px #63f279, 0 0 70px #149d36, 0 0 80px #14cf68;
+  }
+}
+
+.button {
+    top: 60%;
+    padding:60px ;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px 25px;
+    color: rgb(245, 239, 235);
+    background-color:#0da71a;
+    outline: none;
+    text-decoration:none;
+    border: none;
+    box-shadow: 0 9px #999;
+    font-size: 24px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 700px;
+  
+  }
+  .button:hover{
+     background-color:#094102;
+  }
+  .button:active{
+    background-color:#094102 ;
+    box-shadow: 0 5px #666;
+    transform: translate(4px);
+  }
+  .action
+  { margin-top: -150px;
+    margin-bottom: 50px;
+    margin-right: 150px;
+    margin-left: 660px;
+    border: none;
+    cursor: pointer;
+    color: rgb(245,239, 235);
+    border-radius: 15px;
+    padding: 15px 25px;
+    text-align: center;
+    background-color: #0da71a;
+    outline: none;
+    text-decoration:none;
+    font-size: 24px;
+    box-shadow: 0 9px #999;
+
+  }
+  .button:hover{
+    background-color:#094102;}
+    .action:active{
+      background-color:#094102 ;
+      box-shadow: 0 5px #666;
+      transform: translate(4px);
+    }
+    
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}

@@ -1,0 +1,57 @@
+@media only screen and (min-width : 200px) and (max-width:767px){
+/* Navigation */
+#navbar{
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#navbar ul li a{
+    font-size:1rem;
+    padding:0px 7px;
+}
+#login{
+    align-items: end;
+    font-size:1rem;
+    padding:0px 8px;
+}
+#login a{
+    position : absolute;
+    right : 5px;
+}
+/* Home Section */
+#home{
+    height:467px;
+    padding:3px 13px;
+    
+}
+#home::before{
+    height: 480px;
+}
+#home h1{
+    font-size: 40px;
+
+}
+
+.heading_first{
+    font-size:23px;
+}
+.btn, .btn1{
+    font-size: 13px;
+    padding:4px 8px;
+}
+.btn a, .btn1 a{
+    font-size: 13px;
+}
+    #games{
+        width : 100%;
+        flex-direction : column;
+    }
+    .box{
+        margin : 20px;
+        padding :20px  0px;
+    }
+    .box p{
+        font-size: 13px;
+    }
+}

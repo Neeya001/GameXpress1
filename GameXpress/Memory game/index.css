@@ -1,0 +1,124 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+.left-container{
+    width : 65%;
+    height : 100vh;
+    background:black;
+    display :inline-flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content : center;
+}
+
+.left-container h1{
+    font-size : 100px;
+
+    border-right: 3px solid rgb(22, 194, 57);
+   
+  font-family: 'Russo One', sans-serif;
+}
+
+.left-container h2{
+    font-size: 45px;
+  color: yellow;
+  font-family: 'Russo One', sans-serif;
+}
+.game{
+    position:fixed;
+    top : 0;
+    left : 0;
+    font-size: 30px;
+}
+/* Right Container */
+.right-container{
+    width:35%;
+    height : 100vh;
+     display : inline-flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content : center;
+    position: absolute;
+    color: black;
+}
+.box{
+    border: 3px solid #81ff00d4;
+    background:#020708d9;
+    padding: 20px 65px;
+    margin : 20px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius:30px ;
+    cursor: pointer;
+}
+.box1{
+    padding: 20px 65px;
+    margin : 20px;
+    cursor : pointer;
+}
+.box a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #99ff00de;
+}
+.box1 a{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    color : black;
+}
+.box  :hover{
+    padding : 20px 75px;
+    color: yellow;
+}
+.box1 :hover{
+    color :  #38c574;
+    text-decoration: underline;
+}
+.game, #play{
+     font-weight:bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(90deg, #ff0000, #ffff00,#ff00f3, #0033ff, #ff00c4,#ff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation : animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position:0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+@media only screen and (min-width : 100px) and (max-width:877px){
+    body{
+        display : block;
+    }
+    .left-container{
+        width : 100%;
+        height : 50vh;
+  }
+    
+    .left-container h1{
+        font-size : 40px;
+    
+    }
+    #color{
+        font-size: 30px;
+    }
+    .right-container{
+        display:block;
+        width:100%;
+        height : 50vh;
+    }
+    .box, .box1{
+        padding:25px;
+        text-align: center;
+    }
+    .box1 a{
+        font-size: 25px;
+    }
+}
